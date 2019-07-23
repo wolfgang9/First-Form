@@ -12,7 +12,7 @@ export class AppComponent  {
   topics = ['Angular', 'React', 'Vue'];
 
 topicHasError=true;
-  userModel = new User('', 'rob@test.com',7766999548,'default','morning',true);
+  userModel = new User('Rob', 'rob@test.com',7766999548,'default','morning',true);
   constructor(private _enrollmentService: EnrollmentService){}
 
   validateTopic(value){

@@ -1,7 +1,9 @@
-<div class="container-fluid">
-  <h1>Bootcamp Enrollment Form</h1>
+<div id="dPrimary" class="container-fluid">
+  <h1 style="text-align:center">Bootcamp Enrollment Form</h1>
+  <br>
   <form #userForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
-
+    
+    <div id="d01" class="card text-white bg-dark mb-3" style="width: 18rem; margin:auto">
     <div class="form-group">
       <label>Name</label>
       <input type="text" required
@@ -77,5 +79,6 @@
       <label class="form-check-label">Send me Promotional Offers</label>
     </div>
     <button class="btn btn-primary" type="submit" [disabled]="userForm.form.invalid || topicHasError">Submit form</button>
+  </div>
   </form>
 </div>
