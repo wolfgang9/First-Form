@@ -12,7 +12,7 @@ export class AppComponent  {
   topics = ['Angular Developer', 'React Developer', 'Vue Developer', 'MEAN Stack Devops'];
 
 topicHasError=true;
-  userModel = new User('Rob', 'rob@test.com',7766999548,'default','morning',true);
+  userModel = new User('Rob', 'rob@test.com',7766999548,'default','morning');
   constructor(private _enrollmentService: EnrollmentService){}
 
   validateTopic(value){
