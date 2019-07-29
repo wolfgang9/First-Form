@@ -13,6 +13,7 @@ export class AppComponent  {
 
 topicHasError=true;
   userModel = new User('Rob', 'rob@test.com',7766999548,'default','morning');
+ 
   constructor(private _enrollmentService: EnrollmentService){}
 
   validateTopic(value){
@@ -22,6 +23,7 @@ topicHasError=true;
       this.topicHasError=false;
     }
   }
+
   onSubmit(){
     console.log(this.userModel);
     this._enrollmentService.enroll(this.userModel).subscribe(data => console.log('Success!', data),
